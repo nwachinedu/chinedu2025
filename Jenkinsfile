@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         stage('build') {
-            agent{
+            agents {
                 docker {
                     image 'node:18-alpine'
                     reuseNode true
@@ -20,6 +20,5 @@ pipeline {
                 '''
             }
         }
-        
     }
 }
