@@ -29,7 +29,6 @@ pipeline {
             }
             steps {
                 sh '''
-                test -f Jenkinsfile || echo "Jenkinsfile does not exist"
                 npm test
                 '''
             }
